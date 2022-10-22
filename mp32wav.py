@@ -1,5 +1,11 @@
 #!/user/bin/env python
 # coding=utf-8
+
+'''
+python code using trans the mp4 to wav
+
+'''
+
 from ffmpy3 import FFmpeg
 
 import os
