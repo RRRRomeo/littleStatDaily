@@ -25,6 +25,8 @@ def audio_transfor(audio_path: str, output_dir: str):
     return result
 
 
-def handle(audio_dir: str, output_dir: str):
-    for x in os.listdir(audio_dir):
-        audio_transfor(os.path.join(audio_dir, x), output_dir)
+def handle(audio_dir: str):
+    # for x in os.listdir(audio_dir):
+    cur_path = os.getcwd() + "/"
+    print(cur_path)
+    audio_transfor(audio_dir, cur_path)
